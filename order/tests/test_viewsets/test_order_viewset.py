@@ -1,8 +1,9 @@
 import json
 
 from django.urls import reverse
-from rest_framework import status
+from rest_framework.views import status
 from rest_framework.test import APIClient, APITestCase
+from rest_framework.authtoken.models import Token
 
 from order.factories import OrderFactory, UserFactory
 from order.models import Order
@@ -11,7 +12,6 @@ from product.models import Product
 
 
 class TestOrderViewSet(APITestCase):
-
     client = APIClient()
 
     def setUp(self):
