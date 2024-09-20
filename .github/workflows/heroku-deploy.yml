@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  # Escolhi a versão mais recente
       - name: Deploy to Heroku
-        uses: akhileshns/heroku-deploy@v4.2.0
+        uses: akhileshns/heroku-deploy@v4.2.0  # Escolhi a versão mais recente
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  # Escolhi a versão mais recente
         with:
           fetch-depth: 0
       - name: Heroku login credentials
