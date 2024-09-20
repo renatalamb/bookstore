@@ -155,5 +155,3 @@ INTERNAL_IPS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION = True
